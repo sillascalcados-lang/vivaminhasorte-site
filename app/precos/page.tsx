@@ -86,9 +86,11 @@ export default function PrecosPage() {
                 href={option.link}
                 target="_blank" // Abre em uma nova aba
                 rel="noopener noreferrer" // Segurança para links externos
-                className="w-full bg-red-500 text-white font-bold py-4 px-6 rounded-full text-lg md:text-xl transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0
-                           border-b-4 border-red-700 hover:border-b-2 active:border-b-0
-                           shadow-lg shadow-yellow-400/50 ring-2 ring-yellow-400/30 hover:ring-yellow-400/60 hover:shadow-yellow-400/70 mb-4 flex justify-center items-center"
+                className="w-full bg-red-500 text-white font-bold py-4 px-6 rounded-full text-lg md:text-xl transition-all duration-200 ease-out
+                           relative overflow-hidden
+                           shadow-[0_6px_0_0_rgba(185,28,28,1)] hover:shadow-[0_3px_0_0_rgba(185,28,28,1)] active:shadow-[0_0px_0_0_rgba(185,28,28,1)]
+                           transform hover:-translate-y-1 active:translate-y-0
+                           ring-2 ring-yellow-400/30 hover:ring-yellow-400/60 hover:shadow-yellow-400/70 mb-4 flex justify-center items-center"
               >
                 {option.sequences} Sequência{option.sequences > 1 ? "s" : ""} por R$ {option.price}
               </Link>
@@ -112,7 +114,9 @@ export default function PrecosPage() {
         </div>
 
         {/* Footer Section */}
-        <footer className="bg-gray-900 rounded-t-3xl px-6 py-8 mt-12">
+        <footer className="bg-gray-900 px-6 py-8 mt-12">
+          {" "}
+          {/* Removed rounded-t-3xl */}
           <div className="max-w-md mx-auto text-center">
             {/* Logo and Cars */}
             <div className="mb-6">
