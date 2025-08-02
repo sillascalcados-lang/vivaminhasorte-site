@@ -122,37 +122,40 @@ export default function PrecosPage() {
             {/* Logo */}
             <div className="mb-6">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-JDB9Pn8fgBzJ0ZkWOsK3So8SLxPMmh.png"
-                alt="Promoção 1 Milhão em Prêmios"
-                className="w-32 md:w-40 h-auto mx-auto"
+                src="/images/promo-1-milhao-carros-footer.png" // Mantém o logo específico da página de preços
+                alt="Promoção 1 Milhão em Prêmios com Carros"
+                className="w-48 h-auto mx-auto mb-4" // Mantém o tamanho específico da página de preços
               />
             </div>
-
             {/* Terms Title */}
-            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">TERMOS DO USUÁRIO</h3>
-
+            <h3 className="text-xl font-bold mb-4 text-white">TERMOS DO USUÁRIO</h3>{" "}
+            {/* Mantém o tamanho específico da página de preços */}
             {/* Contact Email */}
-            <p className="text-gray-300 mb-6 text-sm md:text-base">contato@sequenciasdasorte.com</p>
-
+            <p className="text-gray-300 mb-6 text-sm">contato@numerosdasorte.com</p>{" "}
+            {/* Mantém o email específico da página de preços */}
             {/* Security Badges */}
-            <div className="flex items-center justify-center gap-4 mb-8">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              {" "}
+              {/* Mantém o espaçamento específico da página de preços */}
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/imgi_36_491699_1_170881495139784116-fnz88vPG5PvxOKOqVUzjdjs8Vxr0PY.png"
                 alt="Navegação Segura Google"
-                className="h-10 w-auto"
-              />
+                className="h-8 w-auto"
+              />{" "}
+              {/* Mantém o tamanho específico da página de preços */}
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/imgi_38_491699_1_170881496151311455-3LDCrCbiomMcfnQS1nWnviGG7x0UoN.png"
                 alt="Site Protegido SSL"
-                className="h-10 w-auto"
-              />
+                className="h-8 w-auto"
+              />{" "}
+              {/* Mantém o tamanho específico da página de preços */}
             </div>
-
             {/* Legal Text */}
-            <div className="text-gray-400 text-xs md:text-sm space-y-2">
-              <p>* Valores meramente ilustrativos, a depender do sorteio da Quina, Caixa Econômica Federal</p>
-              <p>Não somos loteria, não realizamos sorteios e não vendemos Títulos de Capitalização.</p>
-              <p className="font-semibold">56.302.747/0001-59 - Todos os Direitos Reservados</p>
+            <div className="text-gray-400 text-xs space-y-1">
+              {" "}
+              {/* Mantém o texto legal específico da página de preços */}
+              <p>Não somos loteria, não realizamos sorteios e não vendemos</p>
+              <p>Títulos de Capitalização.</p>
             </div>
           </div>
         </footer>
