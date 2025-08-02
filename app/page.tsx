@@ -153,7 +153,7 @@ export default function VibrantLotteryPromo() {
 
       {/* Top Message */}
       <div className="relative z-10 text-center py-4 px-4">
-        <p className="text-black text-sm max-w-4xl mx-auto font-sans md:text-xs font-thin tracking-normal leading-[0rem]">
+        <p className="text-black text-sm max-w-4xl mx-auto font-sans md:text-xs font-thin tracking-normal leading-[0.5rem]">
           HOJE é sua chance de poder mudar de vida. Clique no botão abaixo para comprar seu e-book e receba de brinde as
           sequências sugeridas para a Quina geradas por IA e se torne o próximo milionário.
         </p>
