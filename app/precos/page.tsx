@@ -113,44 +113,46 @@ export default function PrecosPage() {
           ))}
         </div>
 
-        {/* Footer Section */}
-        <footer className="bg-gray-900 px-6 py-8 mt-12">
-          {" "}
-          {/* Removed rounded-t-3xl */}
-          <div className="max-w-md mx-auto text-center">
-            {/* Logo and Cars */}
+        {/* Footer */}
+        <footer className="py-8 px-4 bg-black relative">
+          {/* Orange top border */}
+          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 to-red-500"></div>
+
+          <div className="max-w-4xl mx-auto text-center">
+            {/* Logo */}
             <div className="mb-6">
               <img
-                src="/images/promo-1-milhao-carros-footer.png"
-                alt="Promoção 1 Milhão em Prêmios com Carros"
-                className="w-48 h-auto mx-auto mb-4"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-JDB9Pn8fgBzJ0ZkWOsK3So8SLxPMmh.png"
+                alt="Promoção 1 Milhão em Prêmios"
+                className="w-32 md:w-40 h-auto mx-auto"
               />
             </div>
 
             {/* Terms Title */}
-            <h3 className="text-xl font-bold mb-4 text-white">TERMOS DO USUÁRIO</h3>
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">TERMOS DO USUÁRIO</h3>
 
             {/* Contact Email */}
-            <p className="text-gray-300 mb-6 text-sm">contato@numerosdasorte.com</p>
+            <p className="text-gray-300 mb-6 text-sm md:text-base">contato@sequenciasdasorte.com</p>
 
             {/* Security Badges */}
-            <div className="flex items-center justify-center gap-4 mb-6">
+            <div className="flex items-center justify-center gap-4 mb-8">
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/imgi_36_491699_1_170881495139784116-fnz88vPG5PvxOKOqVUzjdjs8Vxr0PY.png"
                 alt="Navegação Segura Google"
-                className="h-8 w-auto"
+                className="h-10 w-auto"
               />
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/imgi_38_491699_1_170881496151311455-3LDCrCbiomMcfnQS1nWnviGG7x0UoN.png"
                 alt="Site Protegido SSL"
-                className="h-8 w-auto"
+                className="h-10 w-auto"
               />
             </div>
 
             {/* Legal Text */}
-            <div className="text-gray-400 text-xs space-y-1">
-              <p>Não somos loteria, não realizamos sorteios e não vendemos</p>
-              <p>Títulos de Capitalização.</p>
+            <div className="text-gray-400 text-xs md:text-sm space-y-2">
+              <p>* Valores meramente ilustrativos, a depender do sorteio da Quina, Caixa Econômica Federal</p>
+              <p>Não somos loteria, não realizamos sorteios e não vendemos Títulos de Capitalização.</p>
+              <p className="font-semibold">56.302.747/0001-59 - Todos os Direitos Reservados</p>
             </div>
           </div>
         </footer>
