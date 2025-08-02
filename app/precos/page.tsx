@@ -87,7 +87,7 @@ export default function PrecosPage() {
                 href={option.link}
                 target="_blank" // Abre em uma nova aba
                 rel="noopener noreferrer" // Segurança para links externos
-                className="w-full bg-red-500 text-white font-bold py-4 px-6 rounded-full text-lg md:text-xl transition-all duration-200 ease-out
+                className="w-full bg-red-500 text-white font-bold py-3 px-5 rounded-full text-base md:text-lg transition-all duration-200 ease-out
                            relative overflow-hidden
                            shadow-[0_6px_0_0_rgba(185,28,28,1)] hover:shadow-[0_3px_0_0_rgba(185,28,28,1)] active:shadow-[0_0px_0_0_rgba(185,28,28,1)]
                            transform hover:-translate-y-1 active:translate-y-0
