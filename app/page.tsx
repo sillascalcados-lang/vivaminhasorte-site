@@ -153,7 +153,7 @@ export default function VibrantLotteryPromo() {
 
       {/* Top Message */}
       <div className="relative z-10 text-center py-4 px-4">
-        <p className="text-black text-xs max-w-4xl mx-auto tracking-[-0.02em] leading-[0.05rem] md:text-xs font-extralight">
+        <p className="text-black text-sm max-w-4xl mx-auto md:text-xs font-thin">
           HOJE é sua chance de poder mudar de vida. Clique no botão abaixo para comprar seu e-book e receba de brinde as
           sequências sugeridas para a Quina geradas por IA e se torne o próximo milionário.
         </p>
@@ -219,7 +219,7 @@ export default function VibrantLotteryPromo() {
 
         {/* Bottom disclaimer */}
         <div className="text-center">
-          <p className="text-black max-w-md mx-auto text-xs font-extralight">
+          <p className="text-black max-w-md mx-auto font-thin text-xs">
             * Valores meramente ilustrativos, a depender do sorteio da Caixa Econômica Federal
           </p>
         </div>
@@ -516,16 +516,16 @@ export default function VibrantLotteryPromo() {
       </footer>
 
       <style jsx>{`
-        @keyframes slide {
-          0%, 25% { transform: translateX(0%); }
-          30%, 55% { transform: translateX(-100%); }
-          60%, 85% { transform: translateX(-200%); }
-          90%, 100% { transform: translateX(-300%); }
-        }
-        .animate-slide {
-          animation: slide 8s infinite;
-        }
-      `}</style>
+      @keyframes slide {
+        0%, 25% { transform: translateX(0%); }
+        30%, 55% { transform: translateX(-100%); }
+        60%, 85% { transform: translateX(-200%); }
+        90%, 100% { transform: translateX(-300%); }
+      }
+      .animate-slide {
+        animation: slide 8s infinite;
+      }
+    `}</style>
     </div>
   )
 }
