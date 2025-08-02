@@ -162,7 +162,7 @@ export default function VibrantLotteryPromo() {
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-2">
         {/* Header Text */}
         <div className="text-center mb-1">
-          <h1 className="text-4xl md:text-7xl font-black text-yellow-300 mb-2 transform -rotate-2 drop-shadow-2xl shadow-xl">
+          <h1 className="text-4xl md:text-7xl font-black text-yellow-300 mb-2 transform -rotate-2 drop-shadow-2xl shadow-xl mt-[-28px]">
             SUA VIDA NOVA
           </h1>
           <h2 className="text-3xl md:text-6xl font-black text-yellow-300 transform rotate-1 drop-shadow-2xl shadow-2xl">
