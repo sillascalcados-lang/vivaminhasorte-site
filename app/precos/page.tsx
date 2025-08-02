@@ -52,7 +52,7 @@ export default function PrecosPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-500 via-red-500 to-yellow-500 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-orange-500 via-red-500 to-yellow-500 relative overflow-hidden flex flex-col">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-20 h-20 bg-yellow-300/30 rounded-full animate-bounce"></div>
@@ -66,7 +66,8 @@ export default function PrecosPage() {
         <div className="absolute bottom-1/3 left-1/3 w-10 h-10 bg-yellow-500 rounded-full animate-bounce delay-500"></div>
       </div>
 
-      <div className="relative z-10 min-h-screen px-4 py-8">
+      {/* Main content wrapper - now flex-grow to push footer to bottom */}
+      <div className="relative z-10 flex-grow px-4 py-8">
         {/* Header Section */}
         <div className="text-center mb-8">
           {/* Promotion Badge */}
@@ -112,54 +113,48 @@ export default function PrecosPage() {
             </div>
           ))}
         </div>
-
-        {/* Footer */}
-        <footer className="py-8 px-4 bg-black relative">
-          {/* Orange top border */}
-          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 to-red-500"></div>
-
-          <div className="max-w-4xl mx-auto text-center">
-            {/* Logo */}
-            <div className="mb-6">
-              <img
-                src="/images/promo-1-milhao-carros-footer.png" // Mantém o logo específico da página de preços
-                alt="Promoção 1 Milhão em Prêmios com Carros"
-                className="w-48 h-auto mx-auto mb-4" // Mantém o tamanho específico da página de preços
-              />
-            </div>
-            {/* Terms Title */}
-            <h3 className="text-xl font-bold mb-4 text-white">TERMOS DO USUÁRIO</h3>{" "}
-            {/* Mantém o tamanho específico da página de preços */}
-            {/* Contact Email */}
-            <p className="text-gray-300 mb-6 text-sm">contato@numerosdasorte.com</p>{" "}
-            {/* Mantém o email específico da página de preços */}
-            {/* Security Badges */}
-            <div className="flex items-center justify-center gap-4 mb-6">
-              {" "}
-              {/* Mantém o espaçamento específico da página de preços */}
-              <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/imgi_36_491699_1_170881495139784116-fnz88vPG5PvxOKOqVUzjdjs8Vxr0PY.png"
-                alt="Navegação Segura Google"
-                className="h-8 w-auto"
-              />{" "}
-              {/* Mantém o tamanho específico da página de preços */}
-              <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/imgi_38_491699_1_170881496151311455-3LDCrCbiomMcfnQS1nWnviGG7x0UoN.png"
-                alt="Site Protegido SSL"
-                className="h-8 w-auto"
-              />{" "}
-              {/* Mantém o tamanho específico da página de preços */}
-            </div>
-            {/* Legal Text */}
-            <div className="text-gray-400 text-xs space-y-1">
-              {" "}
-              {/* Mantém o texto legal específico da página de preços */}
-              <p>Não somos loteria, não realizamos sorteios e não vendemos</p>
-              <p>Títulos de Capitalização.</p>
-            </div>
-          </div>
-        </footer>
       </div>
+
+      {/* Footer - now outside the px-4 wrapper and full width */}
+      <footer className="py-8 bg-black relative w-full">
+        {/* Orange top border */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 to-red-500"></div>
+
+        <div className="max-w-4xl mx-auto text-center px-4">
+          {" "}
+          {/* Added px-4 here for inner content padding */}
+          {/* Logo */}
+          <div className="mb-6">
+            <img
+              src="/images/promo-1-milhao-carros-footer.png"
+              alt="Promoção 1 Milhão em Prêmios com Carros"
+              className="w-48 h-auto mx-auto mb-4"
+            />
+          </div>
+          {/* Terms Title */}
+          <h3 className="text-xl font-bold mb-4 text-white">TERMOS DO USUÁRIO</h3>
+          {/* Contact Email */}
+          <p className="text-gray-300 mb-6 text-sm">contato@numerosdasorte.com</p>
+          {/* Security Badges */}
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/imgi_36_491699_1_170881495139784116-fnz88vPG5PvxOKOqVUzjdjs8Vxr0PY.png"
+              alt="Navegação Segura Google"
+              className="h-8 w-auto"
+            />
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/imgi_38_491699_1_170881496151311455-3LDCrCbiomMcfnQS1nWnviGG7x0UoN.png"
+              alt="Site Protegido SSL"
+              className="h-8 w-auto"
+            />
+          </div>
+          {/* Legal Text */}
+          <div className="text-gray-400 text-xs space-y-1">
+            <p>Não somos loteria, não realizamos sorteios e não vendemos</p>
+            <p>Títulos de Capitalização.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
