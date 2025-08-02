@@ -86,7 +86,9 @@ export default function PrecosPage() {
                 href={option.link}
                 target="_blank" // Abre em uma nova aba
                 rel="noopener noreferrer" // Segurança para links externos
-                className="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-6 rounded-full text-lg md:text-xl transition-all duration-300 transform hover:scale-105 shadow-lg shadow-yellow-400/50 ring-2 ring-yellow-400/30 hover:ring-yellow-400/60 hover:shadow-yellow-400/70 mb-4 flex justify-center items-center"
+                className="w-full bg-red-500 text-white font-bold py-4 px-6 rounded-full text-lg md:text-xl transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0
+                           border-b-4 border-red-700 hover:border-b-2 active:border-b-0
+                           shadow-lg shadow-yellow-400/50 ring-2 ring-yellow-400/30 hover:ring-yellow-400/60 hover:shadow-yellow-400/70 mb-4 flex justify-center items-center"
               >
                 {option.sequences} Sequência{option.sequences > 1 ? "s" : ""} por R$ {option.price}
               </Link>
